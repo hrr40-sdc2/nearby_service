@@ -39,3 +39,4 @@ config.js
 
 production/
 *min*
+*bundle*
