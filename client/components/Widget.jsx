@@ -34,7 +34,7 @@ class Widget extends React.Component {
   }
 
   getNearbyHouses(zip) {
-    axios.get(`http://ec2-18-221-245-147.us-east-2.compute.amazonaws.com:8081/${zip}`)
+    axios.get(`http://ec2-18-221-245-147.us-east-2.compute.amazonaws.com:8081/houses/${zip}`)
       .then((houses) => {
         this.updateHouseList(houses.data);
         this.setState({
